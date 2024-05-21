@@ -48,7 +48,7 @@ const SignIn = () => {
             password:e.target.value
           })
         }} className='outline-none text-white bg-transparent border-gray-500 rounded-md p-3 w-[90%] mx-auto border-2' placeholder='Password' type="password" />
-        <button onClick={userLogin} className='bg-red-700 text-white w-[90%] mx-auto py-2 rounded-sm'>Sign Up</button>
+        <button onClick={userLogin} className='bg-red-700 text-white w-[90%] mx-auto py-2 rounded-sm'>Sign In</button>
         </div>
         <p className='px-10 py-3'>Don't have an account?<Link to='/Batflix/signup' className='cursor-pointer'> Sign up</Link></p>
        </div>
