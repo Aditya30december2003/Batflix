@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Aditya30december2003.github.io/Batflix/",
   "name": "batflix",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start":"vite",
     "dev": "vite",
     "build": "vite build",
