@@ -33,7 +33,7 @@ const Navbar = () => {
   const handleLogout =async()=>{
     try{
      await account.deleteSession("current")
-     navigate("/")
+     navigate("/signin")
     }
     catch(error){
      console.log(error)
