@@ -15,7 +15,7 @@ const SignIn = () => {
   e.preventDefault()
   try{
     await account.createEmailSession(user.email , user.password)
-    navigate("/Batflix/home")
+    navigate("/home")
   }
   catch(error){
     console.log(error)
@@ -50,7 +50,7 @@ const SignIn = () => {
         }} className='outline-none text-white bg-transparent border-gray-500 rounded-md p-3 w-[90%] mx-auto border-2' placeholder='Password' type="password" />
         <button onClick={userLogin} className='bg-red-700 text-white w-[90%] mx-auto py-2 rounded-sm'>Sign In</button>
         </div>
-        <p className='px-10 py-3'>Don't have an account?<Link to='/Batflix/signup' className='cursor-pointer'> Sign up</Link></p>
+        <p className='px-10 py-3'>Don't have an account?<Link to='/signup' className='cursor-pointer'> Sign up</Link></p>
        </div>
       </div>
     </div>
