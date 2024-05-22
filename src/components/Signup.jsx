@@ -3,7 +3,7 @@ import logo from '../assets/imgs/logo.png'
 import { Link , useNavigate } from 'react-router-dom'
 import {account} from '../Appwrite/appwrite'
 import {v4 as uuidv4} from 'uuid'
-const Signup = () => {
+const SignUp = () => {
 
   const navigate = useNavigate()
   const [user , setUser] = useState({
@@ -26,7 +26,7 @@ const Signup = () => {
     promise.then(
       function(response){
         console.log(response)
-        navigate("/home")
+        navigate("/Batflix/home")
       },
       function(error){
         console.log(error)
@@ -75,4 +75,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default SignUp
