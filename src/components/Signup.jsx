@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import logo from '../assets/imgs/logo.png'
-import { Link , useNavigate } from 'react-router-dom'
+import {NavLink , Link , useNavigate } from 'react-router-dom'
 import {account} from '../Appwrite/appwrite'
 import {v4 as uuidv4} from 'uuid'
 const SignUp = () => {
