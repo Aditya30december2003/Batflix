@@ -68,7 +68,7 @@ const SignUp = () => {
         }} className='outline-none text-white bg-transparent border-gray-500 rounded-md p-3 w-[90%] mx-auto border-2' placeholder='Password' type="password" />
         <button onClick={signupUser} className='bg-red-700 text-white w-[90%] mx-auto py-2 rounded-sm'>Sign Up</button>
         </div>
-        <p className='px-10 py-3'>Already have an account?<Link to='/Batflix/' className='cursor-pointer'> Sign in</Link></p>
+        <p className='px-10 py-3'>Already have an account?<Link to='/Batflix/signin' className='cursor-pointer'> Sign in</Link></p>
        </div>
       </div>
     </div>
