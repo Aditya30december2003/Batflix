@@ -19,6 +19,16 @@ const Navbar = () => {
     }
   )
   },[])
+  const LogOut=()=>{
+    let account = document.querySelector('.account')
+    let logout =document.querySelector('.logout');
+    if(logout.classList.contains('account-active')){
+        logout.classList.remove('account-active');
+    }
+    else{
+        logout.classList.add('account-active');
+    }
+}
 
   const handleLogout =async()=>{
     try{
@@ -45,7 +55,7 @@ const Navbar = () => {
           <div className={hover?'bg-black/70 text-left mt-2 p-5 flex flex-col gap-3':'bg-black/70 text-left mt-2 p-5 opacity-0 flex flex-col gap-3'}>
           <p>{userDetails.name}</p>
           <p>{userDetails.email}</p>
-          <div onClick={handleLogout}><button className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>Log Out</button></div>
+          <div onMouseOver={LogOut} ><button onClick={handleLogout} className='bg-red-600 px-6 py-2 rounded cursor-pointer text-white'>Log Out</button></div>
          </div>
         </button>
         </div>
