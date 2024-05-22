@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React , {useState} from 'react'
 import logo from '../assets/imgs/logo.png'
 import { Link , NavLink, useNavigate } from 'react-router-dom'
