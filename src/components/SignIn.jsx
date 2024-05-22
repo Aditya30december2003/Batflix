@@ -1,6 +1,6 @@
 import React , {useState} from 'react'
 import logo from '../assets/imgs/logo.png'
-import { Link , useNavigate } from 'react-router-dom'
+import { Link , NavLink, useNavigate } from 'react-router-dom'
 import {account} from '../Appwrite/appwrite'
 const SignIn = () => {
   
@@ -31,7 +31,7 @@ const SignIn = () => {
       </div>
       <div className='absolute top-0 left-0 bg-black/50 w-full h-screen'>
         {/* logo */}
-       <div><img className='w-[10rem]' src={logo} alt="" /></div>
+       <NavLink to='/Batflix/home'><img className='w-[10rem]' src={logo} alt="" /></NavLink>
        {/* card */}
        <div className='bg-black/70 text-white w-[95%] md:w-[60%] lg:w-[37%] mx-auto p-10 '>
         <h1 className='text-[2rem] font-bold px-5'>Sign in</h1>
