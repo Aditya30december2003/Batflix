@@ -23,7 +23,7 @@ const Navbar = () => {
   const handleLogout =async()=>{
     try{
      await account.deleteSession("current")
-     navigate("/Batflix/")
+     navigate("/")
     }
     catch(error){
      console.log(error)
