@@ -13,7 +13,7 @@ const SignUp = () => {
   })
 
 
-  const signupUser = (e)=>{
+  const signupUser = async(e)=>{
     e.preventDefault()
     try {
       // Create user
