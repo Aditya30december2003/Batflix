@@ -15,7 +15,7 @@ const SignIn = () => {
   e.preventDefault()
   try{
     await account.createEmailSession(user.email , user.password)
-    navigate("/home")
+    navigate("/")
   }
   catch(error){
     console.log(error)

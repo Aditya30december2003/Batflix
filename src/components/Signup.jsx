@@ -15,23 +15,23 @@ const SignUp = () => {
 
   const signupUser = (e)=>{
     e.preventDefault()
+    try {
+      // Create user
+      const response = await account.create(
+        uuidv4(),
+        user.email,
+        user.password,
+        user.name
+      );
 
-    const promise = account.create(
-      uuidv4(),
-      user.email,
-      user.password,
-      user.name,
-    )
+      // Log in user to create a session
+      await account.createEmailSession(user.email, user.password);
 
-    promise.then(
-      function(response){
-        console.log(response)
-        navigate("/home")
-      },
-      function(error){
-        console.log(error)
-      }
-    )
+      console.log(response);
+      navigate('/');
+    } catch (error) {
+      console.log(error);
+    }
   }
   
 
