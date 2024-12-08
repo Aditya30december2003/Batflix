@@ -46,7 +46,7 @@ const Navbar = () => {
       <>
       <div className='flex   justify-between p-4 z-[100] w-full absolute'>
         <h1 className='text-red-600 md:text-4xl font-bold cursor-pointer text-2xl mt-2'>
-          BATFLIX
+          NETFLIX
         </h1>
         <div className='flex'>
         <div >
