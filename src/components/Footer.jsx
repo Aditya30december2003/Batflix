@@ -34,7 +34,7 @@ const Bottom = () => {
         </div>
 
       </div>
-      <div className='font-bold'>Made By Arjun Nigam</div>
+      <div className='font-bold'>Made By Aditya Jain</div>
     </div>
   )
 }
